@@ -18,3 +18,17 @@ invitations to send.
 This program will require you to incorporate everything we
 have learned so far.
 """
+name = []
+d = 0
+for i in range(100):
+    x = input("Enter in a name: ")
+    if x in name:
+        print("That name is already on the list")
+    elif x == "":
+        name.sort()
+        print(name)
+        print(f"You have invited {d} people")
+        break
+    else:
+        name.append(x)
+        d += 1
